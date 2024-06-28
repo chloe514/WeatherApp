@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('https://t4.ftcdn.net/jpg/04/61/23/23/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-4">Weather App</h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Get Weather</h2>
+                        <form id="zipForm">
+                            <div class="form-group">
+                                <label for="zip">Enter Zip Code:</label>
+                                <input type="text" id="zip" class="form-control" placeholder="Zip Code" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Get Weather</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <div id="weatherInfo">
+                            <h2 class="card-title mb-4">Current Weather</h2>
+                            <div class="weather-data">
+                                <p><strong>City:</strong> <span id="city"></span></p>
+                                <p><strong>Temperature:</strong> <span id="temperature"></span> °F</p>
+                                <p><strong>Conditions:</strong> <span id="conditions"></span></p>
+                                <p><strong>Temp Hi/Lo:</strong> <span id="temp-hi-lo"></span> °F</p>
+                                <p><strong>Date:</strong> <span id="date"></span></p>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
